@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Provide Information
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text" name="firstname" [(ngModel)]="firstname"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Surname</ion-label>
+      <ion-input type="text" name="firstname" [(ngModel)]="surname"></ion-input>
+    </ion-item>
+    <button ion-button full (click)="goToSecondPage(firstname,surname)">Continue</button>
+  </ion-list>
+</ion-content>
