@@ -15,8 +15,8 @@ export class HomePage {
 
   }
   goToSecondPage(firstname, surname) {
-    firstname = firstname || 'Enter name';
-    surname = surname || 'Enter surname';
+    firstname = firstname || 'please enter name';
+    surname = surname || 'and surname';
 
     this.navCtrl.push(SecondPage,{
       text:firstname,

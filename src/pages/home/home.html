@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title style="text-align: center">
       Provide Information
     </ion-title>
   </ion-navbar>
@@ -18,6 +18,6 @@
       <ion-label floating>Surname</ion-label>
       <ion-input type="text" name="firstname" [(ngModel)]="surname"></ion-input>
     </ion-item>
-    <button ion-button full (click)="goToSecondPage(firstname,surname)">Continue</button>
+    <button ion-button full round style="background-color: skyblue" (click)="goToSecondPage(firstname,surname)">Continue</button>
   </ion-list>
 </ion-content>
